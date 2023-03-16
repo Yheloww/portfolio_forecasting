@@ -4,7 +4,8 @@ import yfinance as yf
 import numpy as np 
 import pandas as pd
 
-tickers = []
+tickers = ['AAPL','BABA', 'XOM', 'GIS','LLY']
+
 
 def get_datas(start_date, end_date: date.today(), tickers):
     """
@@ -15,6 +16,8 @@ def get_datas(start_date, end_date: date.today(), tickers):
     end = end_date
     )['Adj Close']
     #save the dataframe to pickle file
-    df.to_pickle('../Datas/tickers21-23')
+    df.to_pickle('./tickers21-23')
     
-    return
+    return print(df.head())
+
+get_datas(date.today() - timedelta(weeks=52*2), date.today(), tickers)
