@@ -4,27 +4,35 @@ import pandas as pd
 from pypfopt import objective_functions
 
 
-stocks = pd.read_pickle('../Datas/test.pkl')
+stocks = pd.read_pickle("../Datas/['AAPL', 'BABA', 'XOM', 'GIS', 'LLY'].pkl")
 cols =stocks.columns.tolist()
 for col in cols:
     stocks[col] = pd.to_numeric(stocks[col])
 
 def expected_return(stocks):
+    """
+    """
     stocks_returns = stocks.pct_change()[1:]
     stocks_returns.head()
     exp_ret = expected_returns.mean_historical_return(stocks)
     stocks.pct_change()[1:].cumsum().plot()
+    plt.title('expected return')
     plt.show()
     return exp_ret
 
 def Cov_matrix(stocks):
+    """
+    """
     # variance / covariance matrix
     cov_matrix2 = risk_models.sample_cov(stocks)
     plotting.plot_covariance(cov_matrix2, plot_correlation=True);
+    plt.title('Covariance_Matrix')
     plt.show()
     return cov_matrix2
 
 def Portfolio_weights(exp_return, covariance_matrix):
+    """
+    """
     ef = EfficientFrontier(exp_return, covariance_matrix)
     # optimizing to have less negligible weights 
     ef.add_objective(objective_functions.L2_reg, gamma=0.1)
@@ -34,8 +42,9 @@ def Portfolio_weights(exp_return, covariance_matrix):
     values = list(test.values())
 
     plt.bar(range(len(test)), values, tick_label=names)
+    plt.title('Weights optimized')
     plt.show()
-    return 
+    return print(test)
 
 exp_ret = expected_return(stocks)
 Cov_matrix = Cov_matrix(stocks)
