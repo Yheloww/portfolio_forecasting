@@ -4,11 +4,6 @@ import pandas as pd
 from pypfopt import objective_functions
 
 
-stocks = pd.read_pickle("../Datas/['AAPL', 'BABA', 'XOM', 'GIS', 'LLY'].pkl")
-cols =stocks.columns.tolist()
-for col in cols:
-    stocks[col] = pd.to_numeric(stocks[col])
-
 def expected_return(stocks):
     """
     """
@@ -46,6 +41,13 @@ def Portfolio_weights(exp_return, covariance_matrix):
     plt.show()
     return print(test)
 
-exp_ret = expected_return(stocks)
-Cov_matrix = Cov_matrix(stocks)
-print(Portfolio_weights(exp_ret,Cov_matrix))
+def port_opti():
+    """
+    """
+    stocks = pd.read_pickle("./['AAPL', 'BABA', 'XOM', 'GIS', 'LLY'].pkl")
+
+    exp_ret = expected_return(stocks)
+    Cov_matrix = Cov_matrix(stocks)
+    print(Portfolio_weights(exp_ret,Cov_matrix))
+
+    return
