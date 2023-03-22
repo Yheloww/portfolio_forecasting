@@ -36,7 +36,6 @@
     <p align="justify"> 
     This project is about portfolio Optimization Using Time Series forecasting to try and predict future stock prices. The Optimization is done Using the efficient frontier optimization and the forecasting is using an Auto-Ml tool called pycaret and oscillate between some statistical models and other. </br>
     :no_entry_sign: disclaimer : this project is a learning project, the ambition is not to make money out of it and the solutions presented here will not help you if you seek this.
-
     </p>
 
 
@@ -67,23 +66,23 @@
 
 <h2 id="folder-Structure"> :file_folder: Folder structure</h2>
     <p align="justify"> 
-    1. **/Assets**-folder contains the images for this Readme and some other plotss from my research </br>
-    2. **/notebooks**-folder contains all my reseach notebooks, these are not useful to run the solutions but if you want to see my learnings and test feel free to take a peek. </br>
-    3. **/src**-folder contains all the Python files to run the complete solution, all you need is to run the **main.py** file to have the solution. and the source code is in the other pythons files. </br>
-    4. **requirement.txt**-contains all the dependencies you have to install to run the solution. </br>
+    1. <b>/Assets</b>-folder contains the images for this Readme and some other plotss from my research </br>
+    2. <b>/notebooks</b>-folder contains all my reseach notebooks, these are not useful to run the solutions but if you want to see my learnings and test feel free to take a peek. </br>
+    3. <b>/src</b>-folder contains all the Python files to run the complete solution, all you need is to run the **main.py** file to have the solution. and the source code is in the other pythons files. </br>
+    4. <b>requirement.txt</b>-contains all the dependencies you have to install to run the solution. </br>
     </p>
 
 <h2 id="installation"> :repeat: Installation</h2>
     <p align="justify"> 
     clone the repo on your machine </br>
-    Activate an virtual environment in Python 3.10 </br>
+    Activate an virtual environment in <b>Python 3.10</b> </br>
     then install the different dependecies mentionned in the requirement.txt
     </p>
 
 <h2 id="Usage"> :interrobang: Usage</h2>
     <p align="justify"> 
     1. Choose the portfolio you want to invest in (in the file there's already one for testing). </br>
-    2. Run the **main.py** file to have first some Optimization plots and then the forecasting plots.(it takes some time for the forecasting plots to show because it runs through Pycaret) </br>
+    2. Run the <b>main.py</b> file to have first some Optimization plots and then the forecasting plots.(it takes some time for the forecasting plots to show because it runs through Pycaret) </br>
     </p>
 
 
@@ -114,18 +113,18 @@
     <p align="justify"> 
     Plots of the optimizations of a portfolio using Pyportfolio opt module. 
     </p>
-  <img src="./assets/Figure_1.png" alt="retruns" width="30%">
-  <img src="./assets/cov_matrix.png" alt="covariance matrix" width="30%">
-  <img src="./assets/weights.png" alt="optimized weigths"width="30%">
+  <img src="./assets/Figure_1.png" alt="retruns" width="50%">
+  <img src="./assets/cov_matrix.png" alt="covariance matrix" width="50%">
+  <img src="./assets/weights.png" alt="optimized weigths"width="50%">
     </br>
 
   <h3> Forecasting Plots </h3>
     <p align="justify"> 
     These are some the results of the forecasting using Pycaret to select the best model for each stocks and predict the next month adjusted closed price.
     </p>
-  <img src="./assets/gis_arima_closer.png" alt="Sample signal" width="50%">
-  <img src="./assets/XOM_forecast.png" alt="Sample signal" width="50%">
-  <img src="./assets/LLY_forecast.png" alt="Sample signal" width="50%">
+  <img src="./assets/gis_arima_closer.png" alt="Sample signal" width="100%">
+  <img src="./assets/XOM_forecast.png" alt="Sample signal" width="100%">
+  <img src="./assets/LLY_forecast.png" alt="Sample signal" width="100%">
 
 <h2 id="Timeline"> :calendar: Timeline</h2>
     <p align="justify"> 
@@ -134,6 +133,6 @@
     </p>
 
 <h2 id="Contributors"> :raising_hand: Contributors</h2>
-
-     [Héloïse] (https://github.com/Yheloww) Feldmann 
+    <p>Héloïse feldmann </br>
+        <a href="https://github.com/Yheloww">Github account</a></p>
         
