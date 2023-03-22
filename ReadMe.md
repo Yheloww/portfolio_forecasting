@@ -40,7 +40,7 @@
 
 <h2 id="Objectives"> :dart: Objectives</h2>
     <p align="justify">  
-     :black-circle: Familiarity with basic finance vocabulary </br>
+     :white_circle: Familiarity with basic finance vocabulary </br>
      :black-circle: Understand time-series manipulations </br>
      :black-circle: Understand time-series forecasting </br>
      :black-circle: Experience an optimization problem </br>
@@ -83,7 +83,7 @@
 
 <h2 id="Results-and-discussion"> :microscope: Results and discussions</h2>
     <p align="justify"> 
-    
+
     </p>
 
 
