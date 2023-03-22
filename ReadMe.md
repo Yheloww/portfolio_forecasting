@@ -21,27 +21,65 @@
         <li><a href="#Further developments">Further developments</a></li>
       </ul>
     <li><a href="#folder-structure"> ➤ Folder Structure</a></li>
-    <li><a href="#dataset"> ➤ Installation</a></li>
-    <li><a href="#roadmap"> ➤ Usage</a></li>
-    <li><a href="#preprocessing"> ➤ Results and Discussion</a></li>
+    <li><a href="#installation"> ➤ Installation</a></li>
+    <li><a href="#usage"> ➤ Usage</a></li>
+    <li><a href="#Results-and-discussion"> ➤ Results and Discussion</a></li>
+    <li><a href="#Visuals"> ➤ Visuals</a></li>
     <!--<li><a href="#experiments">Experiments</a></li>-->
-    <li><a href="#results-and-discussion"> ➤ Visuals</a></li>
-    <li><a href="#references"> ➤ Timeline</a></li>
+    <li><a href="#Timeline"> ➤ Timeline</a></li>
     <li><a href="#contributors"> ➤ Contributors</a></li>
   </ol>
 </details>
 
 
 <h2 id="Description"> :memo: Description</h2>
+    <p align="justify"> 
+    Fast description of the project
+    </p>
 
-<p align="justify"> 
-Fast description of the project
-</p>
 
 <h2 id="Objectives"> :dart: Objectives</h2>
+    <p align="justify">   
+    </p>
+    <h3 id="Challenges"> Challenges</h3>
+        <p align="justify"> 
+        </p>
+    <h3 id="Limitations"> Limitations </h3>
+        <p align="justify"> 
+        </p>
+    <h3 id="Further Developments"> Further developments</h3>
+        <p align="justify"> 
+        </p>
 
-<p align="justify"> 
-  
-</p>
 
-<h3 id="Challenges"> :dart: Challenges</h3>
+<h2 id="folder-Structure"> :file_folder: Folder structure</h2>
+    <p align="justify"> 
+    </p>
+
+<h2 id="installation"> :repeat: Installation</h2>
+    <p align="justify"> 
+    clone the repo on your machine 
+    then install the different dependecies mentionned in the requirement.txt
+    </p>
+
+<h2 id="Usage"> :interrobang: Usage</h2>
+    <p align="justify"> 
+    </p>
+
+
+<h2 id="Results-and-discussion"> :microscope: Results and discussions</h2>
+    <p align="justify"> 
+    </p>
+
+
+<h2 id="Visuals"> :chart_with_upwards_trend: Visuals</h2>
+    <p align="justify"> 
+    </p>
+
+<h2 id="Timeline"> :calendar: Timeline</h2>
+    <p align="justify"> 
+    </p>
+
+<h2 id="Contributors"> :raising_hand: Contributors</h2>
+    <p align="justify"> 
+    </p>
