@@ -34,37 +34,43 @@
 
 <h2 id="Description"> :memo: Description</h2>
     <p align="justify"> 
-    Fast description of the project
+    This project is about portfolio Optimization Using Time Series forecasting to try and predict future stock prices. The Optimization is done Using the efficient frontier optimization and the forecasting is using an Auto-Ml tool called pycaret and oscillate between some statistical models and other. </br>
+    :no_entry_sign: disclaimer : this project is a learning project, the ambition is not to make money out of it and the solutions presented here will not help you if you seek this.
+
     </p>
 
 
 <h2 id="Objectives"> :dart: Objectives</h2>
     <p align="justify">  
-     :white_circle: Familiarity with basic finance vocabulary </br>
-     :black-circle: Understand time-series manipulations </br>
-     :black-circle: Understand time-series forecasting </br>
-     :black-circle: Experience an optimization problem </br>
+     :radio_button: Familiarity with basic finance vocabulary </br>
+     :radio_button: Understand time-series manipulations </br>
+     :radio_button: Understand time-series forecasting </br>
+     :radio_button: Experience an optimization problem </br>
     </p>
     <h3 id="Strenghs"> Challenges</h3>
         <p align="justify"> 
-         :black-circle: full pipeline from getting data to forecasting</br>
-         :black-circle: Discovery of lots of tools (pyportfolioOpt, pycaret, quantstats ...)</br>
-         :black-circle: Database Interaction possible</br>
+         :radio_button: full pipeline from getting data to forecasting</br>
+         :radio_button: Discovery of lots of tools (pyportfolioOpt, pycaret, quantstats ...)</br>
+         :radio_button: Database Interaction possible</br>
         </p>
     <h3 id="Limitations"> Limitations </h3>
         <p align="justify"> 
-        :black-circle: No Way for the user to interact with the project</br>
-        :black-circle: Portfolio Optimisation Not complete enough</br>
+        :radio_button: No Way for the user to interact with the project</br>
+        :radio_button: Portfolio Optimisation Not complete enough</br>
         </p>
     <h3 id="Further Developments"> Further developments</h3>
         <p align="justify"> 
-        :black-circle: Creation of an user interface (Deployement of an application) </br>
-        :black-circle: Centralisations of the information of Optimization in one place</br>
+        :radio_button: Creation of an user interface (Deployement of an application) </br>
+        :radio_button: Centralisations of the information of Optimization in one place</br>
         </p>
 
 
 <h2 id="folder-Structure"> :file_folder: Folder structure</h2>
     <p align="justify"> 
+    1. **/Assets**-folder contains the images for this Readme and some other plotss from my research </br>
+    2. **/notebooks**-folder contains all my reseach notebooks, these are not useful to run the solutions but if you want to see my learnings and test feel free to take a peek. </br>
+    3. **/src**-folder contains all the Python files to run the complete solution, all you need is to run the **main.py** file to have the solution. and the source code is in the other pythons files. </br>
+    4. **requirement.txt**-contains all the dependencies you have to install to run the solution. </br>
     </p>
 
 <h2 id="installation"> :repeat: Installation</h2>
@@ -82,10 +88,24 @@
 
 
 <h2 id="Results-and-discussion"> :microscope: Results and discussions</h2>
-    <p align="justify"> 
-
-    </p>
-
+    <h3 id="Optimization"> :ledger: Porfolio Optimization</h3>
+            <p align="justify"> 
+            Not knowing anything about finance it has been a hard journey trough the lingo and the different formulas and techniques. The different librairies that I've tested/used are a little outdated so it was quite hard to have satisfying and understandable results</br>
+            I finally used PyportfolioOpt module, it is great to have fast weights distribution but quite hare to piece everything together.</br>
+            So the results are showed in the **Visuals** part we can see the expected returns of the actual portfolio, the covariance matrix and the expected weigths. I want to make it more clear for the user what all of this mean. 
+            </p>
+    <h3 id="forecasting"> :chart_with_upwards_trend: Stocks forecasting</h3>
+            <p align="justify"> 
+            Using the ,low-code Auto-ML ,module Pycaret was interesting. It took a lot of coding out of the balance and helped me focus and the different results and metrics of the different models.</br>
+            Also it was for me the first experience with statistical models and I took some time studying them and seems to really have intersting usage for the future..</br>
+            The results are the forecasting from Pycaret, we can say that stocks are like really hard to predict so this was a challenge. For some stocks we have results but for other not. The process is very long for forecasting several stocks and the results not very satisfying so I don't know if all of this is really worth it.
+            </p>
+    <h3 id="together"> :key: Putting it all together</h3>
+            <p align="justify"> 
+            So ideally the goal of the projet was to make optimizations on stocks predictions</br>
+            for me this solution is not really viable, but I offer porfolio optimisations on stocks and then forecasting these same stocks.It's not really useful to optimize a predicted portfolio because the prediction are really not accurate. There's a lot of macro economical factors that we would have needed to take to account. </br>
+            So this project was a great learning project, my future objectives for it would be to deploy a solution that can help the client optimize his portfolio of stocks and estimate how these stocks are gonna be doing in the future. 
+            </p>
 
 <h2 id="Visuals"> :chart_with_upwards_trend: Visuals</h2>
     <p align="justify"> 
