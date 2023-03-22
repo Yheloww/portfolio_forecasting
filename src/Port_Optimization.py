@@ -47,7 +47,9 @@ def port_opti():
     stocks = pd.read_pickle("./['AAPL', 'BABA', 'XOM', 'GIS', 'LLY'].pkl")
 
     exp_ret = expected_return(stocks)
-    Cov_matrix = Cov_matrix(stocks)
-    print(Portfolio_weights(exp_ret,Cov_matrix))
+    co_matrix = Cov_matrix(stocks)
+    print(Portfolio_weights(exp_ret,co_matrix))
 
     return
+
+port_opti()
