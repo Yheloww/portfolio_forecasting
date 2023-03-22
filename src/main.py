@@ -8,6 +8,16 @@ DATE = date.today() - timedelta(weeks=52*2)
 
 def main(portefolio : list, date):
     """
+    Use the list of tickers and the date to run all the functions and output some graphs about otpimisation and prediction
+
+    Parameters
+    ----------
+    portefolio : list
+    date
+   
+    Returns
+    -------
+    None 
     """
     # getting datas from yfinances with date chose and portfolio selected
     get_datas(date, date.today(), portefolio)
@@ -19,6 +29,5 @@ def main(portefolio : list, date):
 
 
 if __name__ == "__main__":
-    """
-    """
+    
     main(PORTEFOLIO_1, DATE)

@@ -5,8 +5,20 @@ import numpy as np
 import pandas as pd
 
 
-def get_datas(start_date, end_date: date.today(), tickers):
+def get_datas(start_date, end_date: date.today(), tickers :list):
     """
+    Get the Adjusted close price from yfinance from today's date to chosen date. And save the pd.dataframe to a pickel file
+
+    Parameters
+    ----------
+    start_date : the chose date
+    end_date : today's date
+    tickers : list of tickers
+
+    Returns
+    -------
+    None
+
     """
     # download adj close for each tickers
     df = yf.download(tickers,

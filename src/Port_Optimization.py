@@ -4,8 +4,18 @@ import pandas as pd
 from pypfopt import objective_functions
 
 
-def expected_return(stocks):
+def expected_return(stocks :pd.DataFrame):
     """
+    Get the expected returns of the dataframe and plot it
+
+    Parameters
+    ----------
+    stocks : pd.DataFrame
+   
+    Returns
+    -------
+    exp_ret : pd.DataFrame 
+
     """
     stocks_returns = stocks.pct_change()[1:]
     stocks_returns.head()
@@ -15,8 +25,18 @@ def expected_return(stocks):
     plt.show()
     return exp_ret
 
-def Cov_matrix(stocks):
+def Cov_matrix(stocks : pd.DataFrame):
     """
+    Get the covariance of the dataframe and plot it
+
+    Parameters
+    ----------
+    stocks : pd.DataFrame
+   
+    Returns
+    -------
+   cov_matrix2 
+
     """
     # variance / covariance matrix
     cov_matrix2 = risk_models.sample_cov(stocks)
@@ -27,6 +47,16 @@ def Cov_matrix(stocks):
 
 def Portfolio_weights(exp_return, covariance_matrix):
     """
+    use the exp_returns and the covariance matrix to calculate the portfolio weights and plot them
+
+    Parameters
+    ----------
+    exp_return : pd.DataFrame
+    covariance_matrix
+
+    Returns
+    -------
+    the wieghts printed in the terminal
     """
     ef = EfficientFrontier(exp_return, covariance_matrix)
     # optimizing to have less negligible weights 
@@ -43,6 +73,15 @@ def Portfolio_weights(exp_return, covariance_matrix):
 
 def port_opti():
     """
+    Concateante all the above function into one
+
+    Parameters
+    ----------
+    None 
+    
+    Returns
+    -------
+    None
     """
     stocks = pd.read_pickle("./['AAPL', 'BABA', 'XOM', 'GIS', 'LLY'].pkl")
 
